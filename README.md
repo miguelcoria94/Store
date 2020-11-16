@@ -127,5 +127,35 @@ Now that we defined a reducer function, you can now dispatch the addOrange actio
     console.log(store.getState()) //['orange']
 ```
 
+<h1 align="center">
+Subscribing to the store
+</h1>
+
+Once the store has processed a dispatch(), it triggers all its subscribers.
+
+Subscribers are callbacks that can be added to the store via subscribe().
+
+You can define a callback display and subscribe it ti the store;
+
+```js
+    const display = () => {
+        console.log(store.getState());
+    }
+
+    const unsubscribeDisplay = store.subscribe(display);
+
+    store.dispatch(addOrange); //['orange', 'orange']
+
+    // display will no longer be invoked after store.dispatch()
+    unsubscribeDisplay();
+
+    store.dispatch(addOrange); //no ouput
+
+```
+
+In the example above, the store processed the dispatched action and then called all of its subscribers in response.
+
+The only subscribers is your display callback which logs the current state when called.
+
 
 
