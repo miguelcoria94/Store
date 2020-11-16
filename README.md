@@ -115,4 +115,17 @@ A reducer for the Fruit Stand app looks like this:
     }
 ```
 
+The reducer's state parameter provides a default value; this is the intial state of store prior to any actions. In this case, it's an empty array.
+
+In Redux, the state is immutable, so the reducer must return a new array or object whenever the state changes.
+
+Now that we defined a reducer function, you can now dispatch the addOrange action to the store.
+
+```js
+    console.log(store.getState()) // []
+    store.dispatch(addOrange)
+    console.log(store.getState()) //['orange']
+```
+
+
 
