@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/miguelcoria94/Store/issues"
   },
-  "homepage": "https://github.com/miguelcoria94/Store#readme"
+  "homepage": "https://github.com/miguelcoria94/Store#readme",
+  "dependencies": {
+    "redux": "^4.0.5"
+  }
 }
