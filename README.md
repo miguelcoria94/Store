@@ -37,3 +37,19 @@ Here's an example of how to create a store for a Fruit Stand App:
 
 A Redux app will typically only have a single store.
 
+<h1 align="center">
+Store Api
+</h1>
+
+A Redux store is just an object that holds the apps state, wrapped in a minimalist API.
+
+The store has 3 methods:
+
+```js
+    getState()
+    dispatch(action)
+    subscribe(callback)
+```
+<h1 align="center">
+Store Methods
+</h1>
