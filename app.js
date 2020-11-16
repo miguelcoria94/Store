@@ -15,6 +15,13 @@ const fruitReducer = (state = [], action) => {
 
 const store = createStore(fruitReducer)
 
+//Define an "ADD_FRUIT" action for adding an orange to the store.
+
+const addOrange = {
+    type: 'ADD_FRUIT',
+    fruit: 'orange'
+}
+
 //log to the console the stores state before and after
 //dispatching the "ADD_FRUIT" action;
 console.log(store.getState()) //[]
