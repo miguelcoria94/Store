@@ -157,5 +157,8 @@ In the example above, the store processed the dispatched action and then called 
 
 The only subscribers is your display callback which logs the current state when called.
 
+<h1 align="center">
+Reviewing a simple example
+</h1>
 
-
+look at app.js
