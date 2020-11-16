@@ -53,3 +53,16 @@ The store has 3 methods:
 <h1 align="center">
 Store Methods
 </h1>
+
+```js
+    getState()
+    //returns the store's current state
+
+    dispatch(action)
+    //Passes an action into the store's reducer telling it what info to update
+
+    subscribe(callback)
+    //Registers a callback to be triggered whenever the store updates.
+    //Returns a function, which when invoked, unsubscribes the callback function from the store.
+```
+
